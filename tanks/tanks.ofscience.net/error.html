@@ -1,0 +1,138 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Tanker Stats </title>
+<link rel=stylesheet type="text/css" href="http://tanks.ofscience.net/css/style.css.pagespeed.ce.aV4gdRx_zc.css">
+<link rel=stylesheet type="text/css" href="http://tanks.ofscience.net/css/W.jquery.dataTables.css.pagespeed.cf.jDrdo-gDRf.css">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=viewport content="width=600px"/>
+<script src="http://tanks.ofscience.net/js/jquery.js.pagespeed.jm.A_xP-993uZ.js" type="text/javascript"></script>
+<script src="http://tanks.ofscience.net/js/jquery.dataTables.min.js.pagespeed.jm.aJRznB7toh.js" type="text/javascript"></script>
+<script type="text/javascript">(function($){$.InFieldLabels=function(b,c,d){var f=this;f.$label=$(b);f.label=b;f.$field=$(c);f.field=c;f.$label.data("InFieldLabels",f);f.showing=true;f.init=function(){f.options=$.extend({},$.InFieldLabels.defaultOptions,d);if(f.$field.val()!=""){f.$label.hide();f.showing=false};f.$field.focus(function(){f.fadeOnFocus()}).blur(function(){f.checkForEmpty(true)}).bind('keydown.infieldlabel',function(e){f.hideOnChange(e)}).change(function(e){f.checkForEmpty()}).bind('onPropertyChange',function(){f.checkForEmpty()})};f.fadeOnFocus=function(){if(f.showing){f.setOpacity(f.options.fadeOpacity)}};f.setOpacity=function(a){f.$label.stop().animate({opacity:a},f.options.fadeDuration);f.showing=(a>0.0)};f.checkForEmpty=function(a){if(f.$field.val()==""){f.prepForShow();f.setOpacity(a?1.0:f.options.fadeOpacity)}else{f.setOpacity(0.0)}};f.prepForShow=function(e){if(!f.showing){f.$label.css({opacity:0.0}).show();f.$field.bind('keydown.infieldlabel',function(e){f.hideOnChange(e)})}};f.hideOnChange=function(e){if((e.keyCode==16)||(e.keyCode==9))return;if(f.showing){f.$label.hide();f.showing=false};f.$field.unbind('keydown.infieldlabel')};f.init()};$.InFieldLabels.defaultOptions={fadeOpacity:0.5,fadeDuration:300};$.fn.inFieldLabels=function(c){return this.each(function(){var a=$(this).attr('for');if(!a)return;var b=$("input#"+a+"[type='text'],"+"input#"+a+"[type='password'],"+"textarea#"+a);if(b.length==0)return;(new $.InFieldLabels(this,b[0],c))})}})(jQuery);</script>
+<script src="http://tanks.ofscience.net/js/highcharts.js.pagespeed.jm.AppBBzMQHP.js" type="text/javascript"></script>
+<script src="http://tanks.ofscience.net/js/modules/exporting.js.pagespeed.jm.yecFGpmwmy.js" type="text/javascript"></script>
+<script type="text/javascript">jQuery.fn.liScroll=function(settings){settings=jQuery.extend({travelocity:0.07},settings);return this.each(function(){var $strip=jQuery(this);$strip.addClass("newsticker")
+var stripWidth=1;$strip.find("li").each(function(i){stripWidth+=jQuery(this,i).outerWidth(true);});var $mask=$strip.wrap("<div class='mask'></div>");var $tickercontainer=$strip.parent().wrap("<div class='tickercontainer'></div>");var containerWidth=$strip.parent().parent().width();$strip.width(stripWidth);var totalTravel=stripWidth+containerWidth;var defTiming=totalTravel/settings.travelocity;function scrollnews(spazio,tempo){$strip.animate({left:'-='+spazio},tempo,"linear",function(){$strip.css("left",containerWidth);scrollnews(totalTravel,defTiming);});}
+scrollnews(totalTravel,defTiming);$strip.hover(function(){jQuery(this).stop();},function(){var offset=jQuery(this).offset();var residualSpace=offset.left+stripWidth;var residualTime=residualSpace/settings.travelocity;scrollnews(residualSpace,residualTime);});});};</script>
+<style type="text/css">
+		.topbar_nocolor {
+
+			padding:2px;
+			color:#FFFFFF;
+			margin-top:0px;
+			width:80%;
+			margin:0 auto;
+
+		}
+		
+		.show_cust:hover .cust_color {
+			display:block;
+			
+		}
+		
+		.cust_color {
+			display:none;
+			z-index: 10;
+			width: 600px;
+			border: 1px solid black;
+			padding: 2px;
+			background: #636462;
+			margin-top: 0px;
+			position: relative;
+			margin: 0px auto;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			color: white;
+			
+		}
+		
+		
+		.buttons {
+			margin-top:-1px;
+		}
+		.right_align {
+			margin-right:0px;
+		}
+		.right_space {
+			margin-right:5px;
+		}
+		@media only screen and (max-device-width: 480px) {
+					.buttons li,.buttons li a:link, .buttons li a:visited	{
+						float:none;
+						width:auto;
+						margin-bottom:5px;
+						
+					}
+					.buttons ul
+					{
+						list-style-type:none;
+					}
+					#mainContainer{
+							width:100%;
+							border:0px;
+							padding:0px;
+						}
+						.tickercontainer {
+							width:auto;
+						}
+			.generalStats {
+				width:100%;
+			}
+			#logo {
+				display:none;
+			}
+			#topTanks {
+				width:49%;
+			}
+			#newTanks {
+				width:49%;
+			}
+		
+			#mainContainerFrontPage {
+				width:100%;
+				border:0px;
+				padding:0px;
+				margin:0px;
+				margin:0 auto;
+			}
+			#tankerStats{
+				margin:0 auto;
+				width:100%;
+			}
+			.topbar,.topbar_nocolor
+			{
+				width:100%;
+			}
+			body{
+				width:100%;
+				margin:0px;
+			}
+			.generalStats {
+				width:100%;
+					border:0px;
+					padding:0px;
+			}
+			#tankerStats{
+				width:100%;
+				border:0px;
+				padding:0px;
+			}
+		}
+	
+	
+	
+	
+	</style>
+
+</head>
+<body>
+</div>
+<div id=error>&nbsp;</div>
+</div>
+<h1 style="color:white;">The Server is overloaded. We're working a solution, please bear with us.</h1>
+
+</body>
+</html>

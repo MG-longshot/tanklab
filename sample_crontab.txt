@@ -1,0 +1,4 @@
+MAILTO="youremail@email.com"
+0,30 * * * * /usr/local/bin/php /home/tanks/updateStats.php
+0,30 * * * * /usr/local/bin/php /home/tanks/updateStats_eu.php
+0,30 * * * * /usr/local/bin/php /home/tanks/updateStats_sea.php

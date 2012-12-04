@@ -1,0 +1,12 @@
+ErrorDocument 400 /error.html
+ErrorDocument 401 /error.html
+ErrorDocument 403 /error.html
+ErrorDocument 404 /error.html
+ErrorDocument 500 /error.html
+
+
+RewriteEngine on
+
+RewriteRule ^sig/(.*)/(.*)/signature.png(.*)$ /index.php?name=$2&sig=true&server=$1 [L]
+RewriteRule ^sig_dark/(.*)/(.*)/signature.png(.*)$ /index.php?name=$2&sig=dark&server=$1 [L]
+RewriteRule ^sig_cust/(.*)/(.*)/(.*)/(.*)/signature.png(.*)$ /index.php?fg=$1&bg=$2&server=$3&name=$4&sig=color [L]

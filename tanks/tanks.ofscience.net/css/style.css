@@ -1,0 +1,443 @@
+
+.small_font,.small_font a {
+	font-family: verdana,arial,sans-serif;
+	font-size:8px;
+}
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	background:#ffffff;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	
+}
+.clearboth {
+	clear:both;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.generalStats {
+	width:600px;
+	margin: 0px auto;
+}
+#searchbox {
+	position: fixed;
+	  top: 50%;
+	  left: 50%;
+	width:200px;
+	height:100px;
+	margin-left:-100px;
+	margin-top:-50px;
+}
+#logo {
+	position:relative;
+	width:399px;
+	height:308px;
+	background-image: url(../images/tankerstats.png);
+
+	left: 50%;
+	margin-left:-180px;
+
+}
+#error {
+	position:relative;
+	width:399px;
+	height:308px;
+	background-image: url(../images/kv2-dead.jpg);
+
+	left: 50%;
+	margin-left:-180px;
+
+}
+.topbar {
+	border: 1px solid #000;
+	padding:2px;
+	background:#636462;
+	margin-top:0px;
+	width:80%;
+	margin:0 auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.topbar_nocolor {
+
+	padding:2px;
+	margin-top:0px;
+	width:80%;
+	margin:0 auto;
+	
+}
+
+.topbar span {
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.updated_b {
+	background:white;
+	padding:4px;
+}
+body {
+	background-image: url(../images/background.jpg); background-repeat: repeat;
+	font-family: verdana,arial,sans-serif;
+	font-size:12px;
+}
+
+.left {
+	float:left;
+}
+
+.right{
+	float:right;
+}
+.buttons ul
+{
+list-style-type:none;
+margin:0;
+margin-right:5px;
+padding:0;
+overflow:hidden;
+}
+.buttons li
+{
+float:left;
+margin-right:5px;
+list-style-type: none;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.buttons li a:link, .buttons li a:visited
+{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display:block;
+width:120px;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#98bf21;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}
+.buttons li a:hover,.buttons a:active
+{
+background-color:#7A991A;
+}
+
+#mainContainer{
+	width:80%;
+	background:#FFFFFF;
+padding:2px;
+border: 1px solid #000;
+	margin:0 auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.contentDiv {
+	padding:4px;
+}
+
+form p { position:relative }
+form label  { position:absolute; top:4px; left:6px;opacity: 0.5;
+}
+
+
+
+
+
+
+.tickercontainer { /* the outer div with the black border */
+border: 1px solid #000;
+background: #fff; 
+width: 80%; 
+height: 27px; 
+margin: 0; 
+padding: 0;
+overflow: hidden; 
+margin:0 auto;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+position: relative;
+left: 10px;
+top: 8px;
+
+overflow: hidden;
+}
+ul.newsticker { /* that's your list */
+position: relative;
+
+font: bold 10px Verdana;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+ul.newsticker li {
+float: left; /* important: display inline gives incorrect results when you check for elem's width */
+margin: 0;
+padding: 0;
+background: #fff;
+}
+ul.newsticker a {
+white-space: nowrap;
+padding: 0;
+color: #98bf21;
+font: bold 10px Verdana;
+margin: 0 5px 0 0;
+} 
+ul.newsticker span {
+margin: 0 10px 0 0;
+}
+.green {
+	color:green;
+}
+.red {
+	color:red;
+}
+#newTanks {
+		z-index:10;
+	float:right;
+	border: 1px solid #000;
+	padding:2px;
+	background:#636462;
+	margin-top:0px;
+	position:relative;
+	margin:0 auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:#FFFFFF;
+}
+#newTanks a {
+	white-space: nowrap;
+	padding: 0;
+	color: #98bf21;
+	font: bold 10px Verdana;
+	margin: 0 5px 0 0;
+}
+#topTanks{
+	z-index:10;
+	float:left;
+	border: 1px solid #000;
+	padding:2px;
+	background:#636462;
+	margin-top:0px;
+	position:relative;
+	margin:0 auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:#FFFFFF;
+}
+#topTanks a {
+	white-space: nowrap;
+	padding: 0;
+	color: #98bf21;
+	font: bold 10px Verdana;
+	margin: 0 5px 0 0;
+}
+#mainContainerFrontPage {
+	width:80%;
+
+padding:2px;
+
+	margin:0 auto;
+
+}
+
+.red {
+	color:red;
+}
+.yellow {
+	color:yellow;
+}
+.green {
+	color:#98bf21;
+}
+.purple {
+	color:#cc99ff;
+}
+
+#logo {
+	position:relative;
+	width:399px;
+	height:308px;
+	background-image: url(../images/tankerstats.png);
+
+	left: 50%;
+	margin-left:-200px;
+
+}
+
+#tankerStats{
+		z-index:10;
+		width:600px;
+		border: 1px solid #000;
+		padding:2px;
+		background:#636462;
+		margin-top:0px;
+		position:relative;
+		margin: 0px auto;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		color:#FFFFFF;
+}
+#tankerStats a {
+	white-space: nowrap;
+	padding: 0;
+	color: #98bf21;
+	font: bold 10px Verdana;
+	margin: 0 5px 0 0;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.right_border{
+	border-right: 5px;
+}
+.green_link {
+	white-space: nowrap;
+	padding: 0;
+	color: #98bf21;
+	font: bold 10px Verdana;
+	margin: 0 5px 0 0;
+}
+
+
+.flair-us {
+content: "";
+width: 20px;
+height: 13px;
+display: inline-block;
+background-repeat: no-repeat;
+background-image: url(/images/flags.png);
+background-position: -40px -0px;
+vertical-align: middle;
+margin-right: 3px;
+margin-top: -3px;
+}
+
+.flair-eu {
+content: "";
+width: 20px;
+height: 13px;
+display: inline-block;
+background-repeat: no-repeat;
+background-image: url(/images/flags.png);
+background-position: -60px -0px;
+vertical-align: middle;
+margin-right: 3px;
+margin-top: -3px;
+}
+
+.topbar_nocolor {
+
+	padding:2px;
+	color:#FFFFFF;
+	margin-top:0px;
+	width:80%;
+	margin:0 auto;
+
+}
+.buttons {
+	margin-top:-1px;
+}
+.right_align {
+	margin-right:0px;
+}
+.right_space {
+	margin-right:5px;
+}
+@media only screen and (max-device-width: 480px) {
+			.buttons li,.buttons li a:link, .buttons li a:visited	{
+				float:none;
+				width:auto;
+				margin-bottom:5px;
+				
+			}
+			.buttons ul
+			{
+				list-style-type:none;
+			}
+			#mainContainer{
+					width:100%;
+					border:0px;
+					padding:0px;
+				}
+				.tickercontainer {
+					width:auto;
+				}
+	.generalStats {
+		width:100%;
+	}
+	#logo {
+		display:none;
+	}
+	#topTanks {
+		width:49%;
+	}
+	#newTanks {
+		width:49%;
+	}
+
+	#mainContainerFrontPage {
+		width:100%;
+		border:0px;
+		padding:0px;
+		margin:0px;
+		margin:0 auto;
+	}
+	#tankerStats{
+		margin:0 auto;
+		width:100%;
+	}
+	.topbar,.topbar_nocolor
+	{
+		width:100%;
+	}
+	body{
+		width:100%;
+		margin:0px;
+	}
+	.generalStats {
+		width:100%;
+			border:0px;
+			padding:0px;
+	}
+	#tankerStats{
+		width:100%;
+		border:0px;
+		padding:0px;
+	}
+}
