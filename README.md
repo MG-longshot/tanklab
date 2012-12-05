@@ -13,6 +13,9 @@ Lots of hard-coded paths and other uglyness through out -
 
 Install - 
 
+Requires: php, mysql, apache, cUrl (php curl extensions)
+
+
 1) import the SQL into your Database
 2) set your database credentials in the tanks_db.in.php files
 3) cruise through the source files and fix up any paths that might need to be changed
